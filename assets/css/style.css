@@ -1,0 +1,454 @@
+*
+{
+	margin:0;
+	padding: 0;
+	color:#C5C5C5;
+	
+	
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+.outer-wraper
+{
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+a
+{
+	color:gray;
+	opacity: 0.5;
+	text-decoration:none;
+}
+a:hover
+{
+	color:gray;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.navbar
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #1D1D1B;
+	justify-content: space-between;
+}
+
+.navbar-brand
+{
+	text-shadow: 2px solid gray;
+	letter-spacing: 2px;
+}
+
+.navbar-nav
+{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100vh;
+}
+.nav-item,.navbar-brand
+{
+	margin: 1% 5% 1% 5%;
+	padding: 5px 5px 5px 5px;
+	text-decoration: none;
+	opacity: .5;
+	color: gray;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+
+
+/*home page*/
+
+.home{
+	text-align: center;
+	padding: 20% 20% 20% 20%;
+	font-family: 'Secular One', sans-serif;	
+	background-image: radial-gradient(#1D1D1E 30%, #1D1D10 70%, #1D1D17 40%);
+	width: 100%;
+	margin-top: 0;
+	transition: anime;
+	transition-delay: 5000ms;
+
+
+}
+.intro
+{
+
+	/*border: 2px solid gray;*/
+	text-align: left;
+	opacity: 0.4;
+}
+#ex_mark {
+
+	color: red;
+}
+
+	/*about page*/
+
+.about_div{
+
+	text-align:center;
+	background-color: /*#212529*/ #0F0F0F;
+	color :/*#212529 */#C5C5C5;
+  	padding-bottom: 10%;
+  	padding-top: 5%;
+  	position: relative;
+}
+
+
+#about_heading
+{
+
+	text-align: auto;
+	margin-top: 5%;
+	margin-left: 8%;
+	margin-right: 68%;
+	font-family: 'Secular One', sans-serif;
+	font-size: 8vh;
+	border-radius: 15px;
+	box-shadow: 20px 15px 8px 2px #1D1D1B;
+	min-width: 170px;
+}
+
+#about_para
+{
+	width: 50%;
+	text-align: center;
+	padding: 2% 2% 2% 2%;
+	margin-left: 25%;
+	margin-top: 10% ;
+	margin-bottom: 10%;
+	border: 1px solid black;
+	border-radius: 15px;
+	box-shadow: 20px 15px 8px 2px #1D1D1B;
+
+}
+
+#about_para:hover
+
+{
+	transform: scale(1.2);
+	transition: 0.5s ease-in;
+	border-left: 2px solid gray;
+	border-top: 2px solid gray;
+
+}
+
+		/*technology page #3*/
+
+.Technology_known_div
+{
+	text-align: center;
+	background-color: #151515;
+	padding-top: 5%;
+	padding-bottom: 15%;
+	width: 100%;
+	height: 100%;
+}
+
+#Technology_known_heading
+{
+	
+	font-size: 5vh;
+	text-align: auto;
+	margin-right: 10%;
+	margin-left: 57%;
+	border-radius: 15px;
+	padding-top: 2%;
+	box-shadow: 15px 15px 8px 2px #1B1B19;
+	min-width: 200px;
+	opacity: 0.7;
+}
+
+.container2
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	width: 40%;
+	margin-top: 5%;
+	margin-left: 30%;
+}
+
+.col-sm
+{
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	box-sizing: 5%;
+	 transition: 0.5s; 
+	background-color: #1B1B19;
+	margin: 1%;
+	border-radius: 10px;
+}
+
+.col-sm,.tn1,.tn2
+{
+	padding: 20px;
+	margin: 20px;
+	justify-content: space-between;
+}
+
+.col-sm:hover
+{
+	transform: translate3d(10px, 0, 15px);
+	box-shadow: -15px -15px 8px 2px #1F1F1F;
+	cursor: pointer;
+}
+
+	/*work page #4*/
+
+.my_work_div{
+	text-align:left;
+	background-color: black;
+	padding-top: 10%;
+	padding-bottom: 15%;
+	/* transition: animate_page 0.5s; */
+	height: 100%;
+
+}
+
+#my_work_heading{
+
+	border: 1px solid #1F1F1F;
+	font-size: 5vh;
+	margin-right: 78%;
+	margin-left: 10%;
+	padding: auto;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 15px 15px 8px 2px #1F1F1F;
+	min-width: 147px;
+	opacity: 0.5;
+}
+
+.row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin: 50px;
+	padding: auto;
+}
+
+.tn
+{
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: auto;
+	border:1px solid #2F2F2F;
+	align-items: center;
+	max-width: 200px;
+	min-height: 200px;
+	min-width: 200px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 15px;
+	box-shadow: 15px 15px 8px 2px #1F1F1F;
+	justify-content: space-around;
+	transition-delay: 0.2s;
+}
+.tn:hover
+{
+	transform: scale(1.2);
+	border : 2px solid gray;
+}
+
+	/*contact page #5*/
+
+.rec_div
+{
+	background-color: #151515;
+	width: inherit;
+	padding-top:5%;
+	box-sizing: border-box;
+}
+.resume_div{
+	/*border:2px solid #1D1D1F;*/
+	margin-left: 20%;
+	margin-right: 45%;
+	margin-bottom: 5%;
+}
+#resume_heading{
+
+	opacity: 0.2;
+	margin-top: 100px;
+	font-weight: 50px;
+	font-size: 30px;
+}
+
+#resume_button
+{
+	margin-top: 8%;
+	margin-left: 80%;
+	cursor: pointer;
+	padding: 2% 5% 2% 5% ;
+	background-color: black;
+	border-style: none;
+	border-radius: 15px;
+	/*transition: 0.5s;*/
+}
+#resume_button:hover
+{
+	transform: scale(1.2);
+	box-shadow: 10px 10px 8px 2px #1F1F1F;
+
+}
+.fm_div
+{
+	display: flex;
+	overflow: auto;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+}
+.form_div
+{
+	padding: 30px;
+	display: flex;
+	flex-direction:column;
+	/*margin-right: 4%;*/
+	width: 100%;
+	min-width: 500px;
+
+}
+.container1
+{
+	/*margin-top: 30px;*/
+	padding-left: 15px;
+	display: flex;
+	flex-direction: column;
+	/*margin-left: 30%;*/
+
+
+}
+.container1, .msg
+{
+	width: 50%;
+	padding-left: 30px;
+}
+.container1 .input,.msg
+textarea
+{
+	margin:10px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid black;
+	width: 100%;
+}
+.btn
+{
+	text-align: center;
+	padding: 5px;
+	margin-left: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+	text-transform: uppercase;
+	width: 15%;
+	align-items: right;
+	border: 2px solid #474C5E;
+
+}
+.btn:hover
+{
+	color: gray;
+}
+
+
+
+.contact_div{
+
+
+	margin-right: 5%;
+	text-align: left;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: column;
+	align-self: all;
+
+}
+
+#contact_heading
+{
+	opacity: 0.5;
+	/*margin-right: 10%;*/
+}
+#contact_info
+{
+	width: 100%;
+}
+.footer
+{
+	
+	border-top: 1px solid black;
+	padding-bottom: 2%;
+	text-align: center;
+	background-image:repeating-radial-gradient(#191918 ,#151515 );
+
+
+}
+#icons
+{
+	display: inline-flex;
+	padding-top: 20px;
+	padding-left: 2%;
+	width: 30vh;
+}
+.cr{
+	padding-top: 10px;
+}
+.social-links
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/*padding: 1%;*/
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 15px;
+}
+.social
+{
+
+}
+img
+{
+	max-width: 50px;
+	max-height: 50px;
+	opacity: 0.5;
+}
+#github img
+{
+	background-color: #29A456;
+	border-radius: 15px;
+}
+
+
+
+
+@keyframe anime
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: .5;
+
+	}
+	100%
+	{
+		opacity: 1;
+		transform: scaleX(200px);
+	}
+}
+
