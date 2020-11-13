@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 <body>
-
+	
 	<div class="outer-wraper">
 
 
@@ -22,9 +22,16 @@
 		<!-- <div class="nav_div"> -->
 
 			<nav class="navbar fixed-top">
-
-				<a class="navbar-brand" href="index.html">RANJEET</a>
-				<div class="navbar-nav">
+				<div class="brand-div">
+					<a class="navbar-brand" href="index.html">RANJEET</a>
+					<div class="cross" onclick="myFunction()" >
+						<div class="cx-line"></div>
+						<div class="cx-line"></div>
+						<div class="cx-line"></div>
+					</div>
+				</div>
+				
+				<div class="navbar-nav ">
 					<a class="nav-item nav-link" href="#about-page">About</a>
       				<a class="nav-item nav-link" href="#Technology-known">Skils </a>
       				<a class="nav-item nav-link" href="#work-page">projects</a>
@@ -32,7 +39,7 @@
     			</div>
 			</nav>
 			
-	<!-- 	</div> -->
+		<!-- </div> -->
 
 		<div class="home" id="home-page">
 			<div class="intro ">
@@ -56,14 +63,14 @@
 			<div class="container2">
 
   				<div class="tn1">
-  					<div class="col-sm">Python</div>
-  			  		<div class="col-sm">Django</div>
-  			  		<div class="col-sm">javaScript</div>
+  					<div class="col-sm c1">Python</div>
+  			  		<div class="col-sm c2">Django</div>
+  			  		<div class="col-sm c3">javaScript</div>
   				</div>
  				<div class="tn2">
-  			  			<div class="col-sm">HTML</div>
-  			  	 		<div class="col-sm">CSS</div>
-  			  			<div class="col-sm">MySql</div>
+  			  			<div class="col-sm c4">HTML</div>
+  			  	 		<div class="col-sm c5">CSS</div>
+  			  			<div class="col-sm c6">MySql</div>
 				</div>
 			</div>
 
@@ -106,6 +113,7 @@
 		<div class="fm_div" id="contact-page">
 
 		<div class = "form_div">
+
 				<div class="container1">
 					<input type="text" class="input" placeholder="Name">
 					<input type="text" class="input"  placeholder="E-mail">
@@ -164,7 +172,13 @@
 
 	</footer>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="assets/JS/style.js"></script>
+
 </div>
+
 
 
 </body>
