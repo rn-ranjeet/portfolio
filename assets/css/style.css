@@ -640,13 +640,15 @@ img
 	.cross
 	{
 		visibility: visible;
-		margin-top: -34px;
-		margin-left: 150px;
-		/* margin-right: 30px; */
+		margin-top: 15px;
+		margin-right: 15%;
 		float: right;
 		width: 30px;
 
-
+	}
+	#line:hover
+	{
+		background-color: white;
 	}
 
 	.nav-links
@@ -661,7 +663,7 @@ img
 		background-color: black;
 		margin-top: 50px;
 		visibility: hidden;
-		/*animation: move_right 10s;*/
+		animation: anime 10s;
 		/* border:2px solid red; */
 	}
 	.links
@@ -679,10 +681,12 @@ img
 			height: 550px;
 			width: 40%;
 			justify-content: space-around;
-			background-color: black;
+			background-color: #1D1D1B;
 			margin-top: 50px;
 			visibility: visible;
 			animation: move 2s;
+			border:1px solid black;
+			border-radius: 3%;
 	}
 
 	
