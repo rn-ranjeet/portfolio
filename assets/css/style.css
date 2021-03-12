@@ -31,50 +31,103 @@ a:hover
 	opacity: 0.8;
 	text-decoration: none;
 }
-.nav_div
+.nav-div
 {
-	/*border: 2px solid red;*/
-	padding-top: 10vh;
 	background-color: #1D1D1B;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	height: 8%;
+
+}
+/*.logo
+{
+	background-color: black;
+	text-align:center;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+
+}*/
+.logo
+{
+
+	padding: 15px 0 10px 8%;
+	font-weight: bold;
+	text-decoration: none;
+	color: gray;
+	/*background-color: white;*/
+}
+label:hover
+{
+	cursor: pointer;
+	color: white;
+
 }
 .cross
 {
-	visibility: 0;
-}
-.navbar
-{
 	display: flex;
-	flex-direction: row;
-	background-color: #1D1D1B;
-	justify-content: space-between;
-	/*opacity: .5;*/
-}
-
-.navbar-brand
-{
-	text-shadow: 2px solid gray;
-	letter-spacing: 2px;
-	margin-left: 5vh;
-}
-
-.navbar-nav
-{
+	flex-direction: column;
+	margin-top: -18px;
+	margin-left: 40vh;
+	float: right;
 	text-align: center;
+	visibility: hidden;
+}
+#line
+{
+	background-color: gray;
+	border:  2px solid gray;
+	margin: 2px;
+	padding-right: 20px;
+
+	/*margin-top: 2px;*/
+	/*visibility: hidden;*/
+}
+.cross:hover
+{
+	cursor: pointer;
+}
+
+.nav-links
+{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width:100vh;
+	justify-content: space-around;
+	list-style: none;
+	/*background-color: black;*/
+	width: 80%;
+	font-weight: bold;
+
+
 
 }
-.nav-item,.navbar-brand
+.nav-links li
+{
+	text-decoration: none;
+	margin:10px 20px 10px;
+
+}
+
+.nav-links li,.links
+{
+	text-decoration:none;
+	color: gray;
+	padding: 10px;
+	font-size: 15px;
+
+}
+
+.links:hover
 {
 
-	padding: 5px 5px 5px 5px;
-	text-decoration: none;
-	opacity: .5;
-	color: gray;
-	box-sizing: content-box;
-	overflow: hidden;
+	border: 2px solid gray;
+	border-radius: 30%;
+	color: white;
+
 }
 
 
@@ -94,10 +147,12 @@ a:hover
 {
 
 	/*border: 2px solid gray;*/
-	text-align: left;
+	text-align: center;
 	opacity: 0.4;
 	animation: anime 1s ease-in;
 	transition-delay: 5000ms;
+	/*width: 50%;*/
+	/*height: 100%;*/
 }
 #ex_mark {
 
@@ -521,7 +576,7 @@ img
   }
 
   to {
-    transform: translateY(50%);
+    transform: translateY(0%);
   }
 }
 /*#contact-form
@@ -530,82 +585,107 @@ img
 }
 */
 
+/*breakdown 1*/
+
+@media only screen and (max-width:880px )
+{
+	.navbar-div
+	{
+		/*justify-content: space-between;*/
+	}
+	.logo
+	{
+
+		font-weight: bold;
+		text-decoration: none;
+		color: gray;
+		text-align: left;
+		width: 100%;
+
+	}
+	.nav-links li
+	{
+		text-decoration: none;
+		margin:10px 10px 10px;
+
+	}
+
+	.nav-links li,.links
+	{
+		text-decoration:none;
+		color: gray;
+		padding: 5px;
+		font-size: 15px;
+
+	}
+
+}
+
+
 /*for mobile*/
 
 @media  (max-width: 759px)
 {
-	.navbar
-	{
-		overflow: hidden;
-		background-color: unset;
-		box-sizing: border-box;
 
-	}
-	.navbar-brand
-	{
-		/*float: left;*/
-		text-align: center;
 
-	}
-	.brand-div
+	.nav-div
 	{
-		float: left;
-		width: 100%;
-		align-items: center;
-		background-color: black;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-
+		height: 50px;
 	}
+	.logo{
+		width: 50%;
+		height: 2%;
+	}
+
 	.cross
 	{
-		visibility: 1;
-		
-	}
-	/*.cross:hover
-	{
-		cursor: pointer;
-		background-color: red;
-	}*/
-	.cx-line
-	{
-		/*background-color: gray;*/
-		border:1px solid ;
-		margin-top: 2px;
-		width: 20px;
-	}
-	
-	.navbar-nav
-	{
-		flex-direction: column;
-		justify-content: space-around;
-		/*border:2px solid red;*/
-		margin-left: 101%;
-		margin-top: -15%;
-		width: 100%;
-		height: 95vh;
-		padding-right: 2vh;
-		background-color: black;
-		overflow: hidden;
-
-	}
-	.nv
-	{
-		margin-left: 50%;
-        background-color: black;
-        margin-right: 0;
-        margin-top: 0px;
-        width : 50%;
-        animation:anime_right 1s ease-out;
-	}
-
-	.nav-item
-	{
-	
+		visibility: visible;
+		margin-top: -34px;
+		margin-left: 150px;
+		/* margin-right: 30px; */
 		float: right;
-	
+		width: 30px;
+
+
 	}
+
+	.nav-links
+	{
+		display: flex;
+		flex-direction: column;
+		margin-left: -200px;
+		margin-right: 0;
+		height: 550px;
+		width: 60%;
+		justify-content: space-between;
+		background-color: black;
+		margin-top: 50px;
+		visibility: hidden;
+		/*animation: move_right 10s;*/
+		/* border:2px solid red; */
+	}
+	.links
+	{
+		padding: 10px;
+		margin-left: 20%;
+		/*margin-bottom: 20px;*/
+	}
+	.nv-phone{
+
+			display: flex;
+			flex-direction: column;
+			margin-left: -200px;
+			margin-right: 0;
+			height: 550px;
+			width: 40%;
+			justify-content: space-around;
+			background-color: black;
+			margin-top: 50px;
+			visibility: visible;
+			animation: move 2s;
+	}
+
+	
 
 	#about_heading
 	{
