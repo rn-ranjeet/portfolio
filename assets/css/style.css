@@ -189,7 +189,7 @@ label:hover
 #about_para
 {
 	width: 50%;
-	text-align: center;
+	text-align: left;
 	padding: 2% 2% 2% 2%;
 	margin-left: 25%;
 	margin-top: 10% ;
@@ -267,12 +267,12 @@ label:hover
 	/*animation: move 1s;*/
 
 }
-/*.c1
+ /* .c1
 {
 	animation: move 1s;
-	/*animation-delay: var(--dely);*/
+	animation-delay: var(--dely);
 
-}
+} 
 .c2
 {
 	animation: move 1s;
@@ -302,8 +302,8 @@ label:hover
 	animation: move 1s;
 	animation-delay: inherit;
 
-}
-*/
+} */
+
 
 .col-sm:hover
 {
@@ -705,7 +705,7 @@ img
 
 	#Technology_known_heading
 	{
-		margin-: 0%;
+		margin: 0%;
 		margin-left: 30%;
 
 	}
